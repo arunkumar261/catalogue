@@ -35,7 +35,7 @@ pipeline {
          stage('Build') {
             steps {
                 sh """
-                zip -q -r catalogue.zip ./* -x ".git" -x "*.zip"
+                zip -r catalogue.zip ./* -x ".git" -x "*.zip"
                 ls -ltr
                 """
             }
